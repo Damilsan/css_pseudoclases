@@ -1,9 +1,16 @@
+# Desafío: CSS
+
+## Nombre de Desafío: css_pseudoclases
+
+## Instrucciones
+
 Completa los siguientes desafíos, para que pueda funcionar de manera correcta los códigos css.
 
 I. Establezca el color de fondo en rojo cuando pase el mouse sobre un enlace.
 
+```
 <style>
- a:hover {
+  a:hover {
   background-color: red;
 }
 </style>
@@ -12,11 +19,14 @@ I. Establezca el color de fondo en rojo cuando pase el mouse sobre un enlace.
 
 <h1>This is a header.</h1>
 <p>This is a paragraph.</p>
-<a href="https://larnu.app/#/" class="enlace">This is a link.</a>
+<a href="https://larnu.app/#/">This is a link.</a>
 
 </body>
+```
+
 II. Establezca el color de fondo en rojo, cuando pase el mouse sobre elementos con la clase "maestro".
 
+```
 <style>
  .master:hover {
   background-color: red;
@@ -30,10 +40,13 @@ II. Establezca el color de fondo en rojo, cuando pase el mouse sobre elementos c
 <p>This is a paragraph.</p>
 
 </body>
-III. Establezca el color de fondo en rojo, de cualquier elemento <p> que sea el primer hijo de cualquier elemento.
+```
 
+III. Establezca el color de fondo en rojo, de cualquier elemento `<p>` que sea el primer hijo de cualquier elemento.
+
+```
 <style>
- p:first-child {
+p:first-child {
   background-color: red;
 }
 </style>
@@ -44,10 +57,13 @@ III. Establezca el color de fondo en rojo, de cualquier elemento <p> que sea el 
 <p>This is a paragraph.</p>
 
 </body>
-IV. Establezca el color de fondo en rojo, de cualquier elemento <input> que esté enfocado.
+```
 
+VI. Establezca el color de fondo en rojo, de cualquier elemento `<input>` que esté enfocado.
+
+```
 <style>
- input:focus {
+input:focus {
   background-color: red;
 }
 </style>
@@ -56,17 +72,20 @@ IV. Establezca el color de fondo en rojo, de cualquier elemento <input> que est�
 
 <form>
   Name:
-  <input type="text" name="fname" class="input">
+  <input type="text" name="fname">
   Age:
-  <input type="text" name="age" class="input">
+  <input type="text" name="age">
 </form>
 
 </body>
+```
+
 V. Establezca el color de fondo en rojo, de la primera línea del párrafo.
 
+```
 <head>
 <style>
- .intro::first-line {
+.intro::first-line {
   background-color: red;
 }
 </style>
@@ -83,10 +102,13 @@ haven't had the advantages that you've had.'
 </p>
 
 </body>
-VI. Establezca el color de fondo en rojo, para la primera letra del elemento <p>.
+```
 
+VI. Establezca el color de fondo en rojo, para la primera letra del elemento `<p>`.
+
+```
 <style>
- .intro::first-letter {
+.intro::first-letter {
   background-color: red;
 }
 </style>
@@ -103,9 +125,13 @@ haven't had the advantages that you've had.'
 </p>
 
 </body>
-VII. Inserte la imagen "smiley.gif" antes y después de cualquier elemento <p>, utilizando los pseudoelementos ::before y ::after.
+```
 
+VII. Inserte la imagen "smiley.gif" antes y después de cualquier elemento `<p>`, utilizando los pseudoelementos ::before y ::after.
+
+```
 <style>
+tuCodigoAca {
 p::before {
   content: url('smiley.gif');
 }
@@ -120,3 +146,4 @@ p::after {
 <p>This is a paragraph.</p>
 
 </body>
+```
